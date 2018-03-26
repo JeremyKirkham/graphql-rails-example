@@ -7,7 +7,7 @@ An example application utilizing the GraphQL ruby gem.
 You'll need docker installed.
 
 - `docker-compose up --build`
-- `docker-compose exec web rails db:create db:migrate`
+- `docker-compose exec web rails db:create db:migrate db:seed`
 
 Visit http://localhost:3000/graphiql to execute queries.
 
