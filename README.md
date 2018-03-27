@@ -40,6 +40,16 @@ query {
 }
 ```
 
+Find a single post by id
+```
+query {
+  post(id: 1) {
+    __typename
+    title
+  }
+}
+```
+
 Create a new author
 ```
 mutation($input: CreateAuthorInput!) {
