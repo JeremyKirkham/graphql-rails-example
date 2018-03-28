@@ -8,7 +8,7 @@ module Types
 
     # Custom resolver for a field
     field :full_name, !types.String do
-      resolve lambda { |obj, _args, _ctx|
+      resolve ->(obj, args, ctx) {
         "#{obj.first_name} #{obj.last_name}"
       }
     end
